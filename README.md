@@ -9,34 +9,21 @@ AI project that detects emotions via webcam and recommends music using Spotify A
   - Premium → Auto playback
   - Free → Opens playlist in browser (click Play manually)
 
+**📦 Tech Stack**
 
-📦 Tech Stack
-🖥️ Programming
+Programming: Python 3.10+
+ML/DL: TensorFlow, Keras, NumPy
+Computer Vision: OpenCV (Haar Cascades)
+Music Integration: Spotipy, Spotify Web API
+Auth: OAuth 2.0 (SpotifyOAuth)
+Model: Pre-trained CNN (.h5) on FER-2013
 
-Python 3.10+ – Core language used for model + Spotify API integration
+**🔄 Project Flow**
 
-🤖 Machine Learning / Deep Learning
-
-TensorFlow / Keras – Emotion recognition model (CNN)
-
-NumPy – Numerical operations & preprocessing
-
-OpenCV (opencv-python) – Real-time face detection using Haar cascades
-
-🎶 Music & API Integration
-
-Spotipy – Python client for Spotify Web API
-
-Spotify Web API – Used to control music playback & fetch playlists
-
-🔒 Authentication
-
-OAuth 2.0 (SpotifyOAuth) – For secure Spotify login & permissions
-
-🗄️ Data / Model
-
-Haar Cascades – Pre-trained XML for detecting faces
-Custom Trained Emotion Model (.h5) – CNN trained on FER-2013 dataset (or your dataset)
+Detect face using OpenCV.
+Classify emotion with CNN.
+Map emotion → Spotify playlist.
+Auto play (Premium) / Open playlist (Free).
 
 ## 🛠️ Installation
 ```bash
